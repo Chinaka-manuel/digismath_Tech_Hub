@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+.container{
+    overflow:auto;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+   
+}
+
+.landing_pg{
+    min-height: 100dvh;
+    background-color: rgb(248, 248, 252);
+   
+    background-image:linear-gradient(rgba(0,8,51,0.5), rgba(0,8,51,0.8)), url(./Images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+    background-size:cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    position: relative;
+    
+}
+
+nav>h3{
+    color: rgb(231, 242, 242);
+    font-size: 17px;
+    
+}
+#menu_icon{
+    font-size: 40px !important;
+}
+
+@keyframes animlogo{
+    from{transform: rotateY(0deg);}
+    to{ transform: rotateY(360deg);}
+}
+nav h3> .digismath_logo{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    animation: animlogo 15s ease-in 3s infinite forwards;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius:12px ;
+}
+/* horizontal navigation */
+nav .hori_ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+nav .hori_ul li a{
+    display:block;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(231, 242, 242);
+    font-size: 15px;
+}
+
+nav .hori_ul li a:hover{
+    color: rgb(105, 163, 144);
+}
+
+/* vertical navigation*/
+
+
+nav .verti_ul{
+    margin-top: 6vh;
+    background-color: rgb(132, 75, 75);
+    position: absolute;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    
+
+    
+}
+
+nav .verti_ul li{
+    list-style-type: none;
+    width: auto;
+    text-align:center;
+    border-bottom: 2px solid rgb(121, 106, 106);
+    height: 50px;  
+    display: flex; 
+    flex-direction: column;
+    
+    transition: all 0.2s;
+    
+}
+
+nav .verti_ul li:hover{
+    background-color: rgba(111, 47, 47);
+}
+
+nav .verti_ul li:last-child{
+    border-bottom: none;
+}
+
+nav .verti_ul li a{
+    display:block;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(231, 242, 242);
+    font-size: 15px;
+    width: 150px;
+    height: inherit;
+    padding-top: 20px;
+    
+   
+    
+}
+
+nav .verti_ul li a:hover{
+    color: rgb(105, 163, 144);
+}
+.aboutsec{
+    background-color: rgb(198, 192, 208);
+    min-height: 100dvh;
+}
+
+.landing_tp{
+    color: azure;
+    display: flex;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.landing_tp h2{
+    font-size: 35px;
+    background-image: linear-gradient(to right, rgb(233, 25, 25),rgb(184, 161, 34), rgb(171, 171, 229));
+        background-clip: text;
+        -webkit-text-fill-color: transparent; /* For WebKit browsers like Chrome and Safari */
+        /* text-fill-color: transparent; Standard fallback for other browsers */
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+       
+      }
+      
+
+.form-srch{
+    background-color: rgba(255, 255, 255,0.5);
+    height: 40px;
+    min-width:50vw ;
+    border-radius: 10px;display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 50px 0;
+    box-shadow: 5px 5px 5px rgb(199, 164, 164);
+}
+.form-srch:hover,input:hover, .search-btn:hover{
+    cursor: pointer;
+
+}
+
+input[type=text]{
+    height: 40px;
+    border: none;
+    min-width:40vw ;
+    background-color: rgba(255, 255, 255,0);
+    font-size: 16px;
+    color: black;
+    letter-spacing: 2px;
+    
+}
+  ::-webkit-input-placeholder {
+    color:rgb(81, 70, 70);;
+    font-size: 16px;
+  }
+  ::-moz-placeholder {
+    color:rgb(81, 70, 70);;
+    font-size: 20px;
+  }
+  :-ms-input-placeholder {
+    color:rgb(81, 70, 70);;
+    font-size: 16px;
+  }
+  ::placeholder {
+    color:rgb(81, 70, 70);
+    font-size: 16px;
+    margin-left: 5px;
+    color: black;
+  }
+
+.form-srch input{
+    outline: none;
+    padding-left: 3px;
+    line-height: 12px;
+}
+
+
+
+.material-symbols-outlined{
+    font-size: 40px !important;  
+}
+
+
+#google-icon1{
+    padding-left: 3px;
+    padding-right: 0;
+    font-size: 25px !important;
+    color: bisque;
+}
+
+.search-btn{
+    height: 40px;
+    width: 80px;
+    background: linear-gradient(to right, rgba( 87, 90, 183,0.2),rgba( 87, 90, 183,1));
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 16px;
+    font-weight:bold;
+    transition: all 0.5s;
+    }
+
+    .search-btn:hover{
+        background: linear-gradient(to right, rgba( 87, 90, 183,0.2),rgb(14, 17, 91));
+        color: rgb(205, 215, 215);
+        cursor:pointer;
+    }
+
+.landing-btn button{
+    height: 40px;
+    padding: 5px;
+    margin: 3px;
+    background-color: rgb(70, 74, 183);
+    border-radius: 8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor:pointer;
+    border: none;
+    box-shadow: -5px -5px 3px rgb(37, 30, 30) inset;
+
+}
+
+.landing-btn button a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor:pointer;
+    border: none;
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+    display: block;
+}
+.landing-btn button:hover{
+    background-color: rgb(129, 133, 237);
+}
+
+.Topic{
+    text-align: center;
+}
+.aboutsec,.Mission_Vission, .services{
+    display: flex;
+    flex-direction: column;
+}
+
+.Mission_Vission{
+    
+    min-height: 100dvh;
+}
+
+.services{
+    background-color: rgb(104, 13, 223);
+    margin-bottom: 80px;
+    min-height:100dvh;
+}
+
+span{text-align: center;}
+
+footer{
+    min-height: 80px;
+    margin-top: -80px;
+    background-color: rgb(227, 117, 117);
+}
+
+@media screen and (min-width:601px){
+    .landing_pg nav span{
+        display: none;
+    }
+    nav .verti_ul{
+        display:none;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    nav .hori_ul{
+        display: none;}
+
+    nav .verti_ul{
+            display:none;
+        }
+    
+}
