@@ -271,15 +271,39 @@ input[type=text]{
     flex-direction: column;
 }
 
-.Mission_Vission{
-    
+.aboutsec {
     min-height: 100dvh;
+}
+
+.Mission_Vission{
+    min-height: 100dvh;
+}
+.Mission_Vission .Mission_content .item1{grid-area: firsts;}
+.Mission_Vission .Mission_content .item2{grid-area: seconds;}
+.Mission_Vission .Mission_content .item2{grid-area: thirds;}
+.Mission_Vission .Mission_content .item2{grid-area: fourths;}
+
+.Mission_Vission .Mission_content{
+    display: grid;
+    border: 1px solid black;
+    min-height: 100dvh;
+    grid-template-areas: 'firsts firsts seconds seconds'
+                         'first first seconds seconds'
+                         'thirds thirds thirds seconds'
+                         'firsts thirds thirds thirds'
+    
+    ;
+    gap: 10px;
+}
+
+.Mission_Vission .Mission_content div{
+    border: 1px solid black;
 }
 
 .services{
     background-color: rgb(104, 13, 223);
     margin-bottom: 80px;
-    min-height:100dvh;
+    height:100dvh;
 }
 
 span{text-align: center;}
