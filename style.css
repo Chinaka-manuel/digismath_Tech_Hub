@@ -19,7 +19,7 @@ html,body{
     min-height: 100dvh;
     background-color: rgb(248, 248, 252);
    
-    background-image:linear-gradient(rgba(0,8,51,0.5), rgba(0,8,51,0.8)), url(./Images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+    background-image:linear-gradient(rgba(0,8,51,0.5), rgba(0,8,51,0.8)), url(./Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:local;
@@ -38,8 +38,12 @@ nav>h3{
     font-size: 17px;
     
 }
-#menu_icon{
+.menu_icon{
     font-size: 40px !important;
+}
+
+#menu_icon1{
+    background-color: rgba( 87, 90, 183,0.1);
 }
 
 @keyframes animlogo{
@@ -78,13 +82,14 @@ nav .hori_ul li a:hover{
 
 
 nav .verti_ul{
-    margin-top: 6vh;
-    background-color: rgb(132, 75, 75);
+    margin-top: 8vh;
+    background-color: rgb(20, 19, 19);
     position: absolute;
     right:0;
     display: flex;
     flex-direction: column;
-    
+    border: 1px solid black;
+    border-radius: 6px;
 
     
 }
@@ -103,11 +108,22 @@ nav .verti_ul li{
 }
 
 nav .verti_ul li:hover{
-    background-color: rgba(111, 47, 47);
+    background-color: rgb(239, 232, 232);
 }
 
 nav .verti_ul li:last-child{
     border-bottom: none;
+}
+
+@keyframes animat{
+    from{max-width: 0px;}
+    to{max-width: 150px;}
+}
+
+
+@keyframes animat1{
+    from{max-width: 150px;}
+    to{max-width: 0px;}
 }
 
 nav .verti_ul li a{
@@ -119,17 +135,13 @@ nav .verti_ul li a{
     width: 150px;
     height: inherit;
     padding-top: 20px;
-    
-   
-    
+  
+    animation: animat 1s ease-in-out 0s 1 backwards; 
+    transition: all 0.5s; 
 }
 
 nav .verti_ul li a:hover{
-    color: rgb(105, 163, 144);
-}
-.aboutsec{
-    background-color: rgb(198, 192, 208);
-    min-height: 100dvh;
+    color: rgb(11, 10, 10);
 }
 
 .landing_tp{
@@ -234,8 +246,11 @@ input[type=text]{
         cursor:pointer;
     }
 
+/* buttpn styling */
+    
 .landing-btn button{
     height: 40px;
+    min-width: 100px;
     padding: 5px;
     margin: 3px;
     background-color: rgb(70, 74, 183);
@@ -263,50 +278,78 @@ input[type=text]{
     background-color: rgb(129, 133, 237);
 }
 
-.Topic{
-    text-align: center;
-}
-.aboutsec,.Mission_Vission, .services{
+
+/* sections styling */
+.About_sec{
+    min-height: 70dvh;
+    background-color: antiquewhite;
+    position: relative;
     display: flex;
-    flex-direction: column;
-}
-
-.aboutsec {
-    min-height: 100dvh;
-}
-
-.Mission_Vission{
-    min-height: 100dvh;
-}
-.Mission_Vission .Mission_content .item1{grid-area: firsts;}
-.Mission_Vission .Mission_content .item2{grid-area: seconds;}
-.Mission_Vission .Mission_content .item2{grid-area: thirds;}
-.Mission_Vission .Mission_content .item2{grid-area: fourths;}
-
-.Mission_Vission .Mission_content{
-    display: grid;
-    border: 1px solid black;
-    min-height: 100dvh;
-    grid-template-areas: 'firsts firsts seconds seconds'
-                         'first first seconds seconds'
-                         'thirds thirds thirds seconds'
-                         'firsts thirds thirds thirds'
     
-    ;
-    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+
+    }
+
+.Mission{
+    background-color: rgb(242, 148, 148);
+    min-height: 100dvh;
 }
 
-.Mission_Vission .Mission_content div{
-    border: 1px solid black;
+.Services{
+    min-height: 100dvh;
+    background-color: beige;
 }
 
-.services{
-    background-color: rgb(104, 13, 223);
-    margin-bottom: 80px;
-    height:100dvh;
+.students_testimonies{
+    min-height: 100dvh;
+    background-color: rgb(52, 126, 205);
+    
 }
 
-span{text-align: center;}
+.Gallery{
+    min-height: 100dvh;
+    background-color: beige;
+}
+
+.topics{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+.About_box{
+    min-height: 50dvh;
+    border: 3px solid black;
+    border-radius: 10px;
+    max-width: 60dvw;
+    min-height: auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgba(95, 97, 143,0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    /* position: absolute;
+    bottom: 3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.read_morebtn{
+    margin: 10px;
+    background-color: rgba( 87, 90, 183,0);
+    border:none;
+    cursor: pointer;
+}
+
+.read_morebtn a{
+    text-decoration: none;
+}
+/* footer styling */
 
 footer{
     min-height: 80px;
@@ -315,13 +358,13 @@ footer{
 }
 
 @media screen and (min-width:601px){
-    .landing_pg nav span{
+   
+    nav .verti_ul{
+        display:none !important;
+    }
+    .landing_pg nav #menu_icon1,#menu_icon span{
         display: none;
     }
-    nav .verti_ul{
-        display:none;
-    }
-    
 }
 
 @media screen and (max-width:600px){
@@ -331,5 +374,7 @@ footer{
     nav .verti_ul{
             display:none;
         }
+
+       
     
 }
