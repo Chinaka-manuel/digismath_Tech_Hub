@@ -14,16 +14,21 @@ html,body{
     font-size: 16px;
    
 }
+@keyframes fade {
+    0% { background-image:linear-gradient(rgba(0,8,51,0.8), rgba(0,8,51,0)), url("./Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg"); } /* Start with image1 */
+    50% { background-image:linear-gradient(rgba(0,8,51,0.5), rgba(0,8,51,0.1)), url("./Images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg"); } /* Transition to image2 at 50% */
+    100% { background-image:linear-gradient(rgba(0,8,51,0), rgba(0,8,51,0.8)), url("./Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg"); } /* Back to image1 at 100% */
+
+  }
 
 .landing_pg{
     min-height: 100dvh;
-    background-color: rgb(248, 248, 252);
-   
-    background-image:linear-gradient(rgba(0,8,51,0.5), rgba(0,8,51,0.8)), url(./Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
+    background-image:linear-gradient(rgba(0,8,51,0.5), rgba(0,8,51,0.8)), url(./Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg),linear-gradient(rgba(0,8,51,0.5)), url(./Images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:local;
     background-size:cover;
+    animation: fade 10s ease-in-out 5s infinite alternate; /* Animation properties */
 }
 nav{
     display: flex;
@@ -98,8 +103,8 @@ nav .verti_ul li{
     list-style-type: none;
     width: auto;
     text-align:center;
-    border-bottom: 2px solid rgb(121, 106, 106);
-    height: 50px;  
+    border-bottom: 2px solid rgba(58, 57, 57,0.3);
+    height: 40px;  
     display: flex; 
     flex-direction: column;
     
@@ -108,7 +113,7 @@ nav .verti_ul li{
 }
 
 nav .verti_ul li:hover{
-    background-color: rgb(239, 232, 232);
+    background-color: rgb(106, 98, 98);
 }
 
 nav .verti_ul li:last-child{
@@ -134,14 +139,14 @@ nav .verti_ul li a{
     font-size: 15px;
     width: 150px;
     height: inherit;
-    padding-top: 20px;
+    padding-top: 10px;
   
     animation: animat 1s ease-in-out 0s 1 backwards; 
     transition: all 0.5s; 
 }
 
 nav .verti_ul li a:hover{
-    color: rgb(11, 10, 10);
+    color: rgb(195, 143, 12);
 }
 
 .landing_tp{
@@ -246,7 +251,7 @@ input[type=text]{
         cursor:pointer;
     }
 
-/* buttpn styling */
+/* button styling */
     
 .landing-btn button{
     height: 40px;
@@ -279,7 +284,7 @@ input[type=text]{
 }
 
 
-/* sections styling */
+/*  About sections styling */
 .About_sec{
     min-height: 70dvh;
     background-color: antiquewhite;
@@ -296,11 +301,101 @@ input[type=text]{
     min-height: 100dvh;
 }
 
+/*  Services sections styling */
 .Services{
     min-height: 100dvh;
     background-color: beige;
 }
 
+.card-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px; /* Optional spacing between cards */
+    padding: 20px; /* Optional padding within the container */
+    background-color: #f5f5f5; /* Optional background color */
+    border-radius: 5px; /* Optional rounded corners */
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    transition: transform 0.3s ease-in ; /* Smooth animation transition */
+     transform-style: preserve-3d; /*Preserve 3D perspective for rotation */
+  }
+  
+  .card img {
+    width: 100%; /* Adjust image width as needed */
+    height: 200px; /* Adjust image height as needed */
+    object-fit: cover; /* Scales image to fill the container */
+  }
+
+  /* Rotate the card on hover */
+.card:hover {
+    transform: translateY(20px); /* Rotate card 180 degrees on its Y-axis */
+  }
+  .card img:hover{
+    opacity:0.7;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+  }
+  
+  .card button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #0069d9;
+  }
+  
+
+/*.cards_container{
+    display: grid;
+    min-height: 80dvh;
+    max-width: 100dvw;
+    justify-content:space-evenly;
+    margin: auto;
+    gap: 5px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto; 
+    margin-top: 40px;
+}
+
+.cards_container > div{
+    border: 1px solid black;
+    min-width: 30dvw;
+    min-height: 50dvh;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    
+}
+
+
+.cards_container .containItem-1, .containItem-2,.containItem-3,.containItem-3,.containItem-4,.containItem-5, div img{
+   max-width: 100%;
+
+}*/
+
+
+
+
+
+/* students testimony section */
 .students_testimonies{
     min-height: 100dvh;
     background-color: rgb(52, 126, 205);
@@ -322,15 +417,16 @@ align-items: center;
 
 .About_box{
     min-height: 50dvh;
-    border: 3px solid black;
+    border: none;
     border-radius: 10px;
     max-width: 60dvw;
     min-height: auto;
     text-align: center;
     margin-top: 40px;
-    background-color: rgba(95, 97, 143,0.2);
+    background: linear-gradient(to right, rgba(95, 97, 143,0.05),  rgba(95, 97, 143,0.3));
     padding: 10px;
     margin-bottom: 10px;
+
     /* position: absolute;
     bottom: 3px;
     display: flex;
@@ -367,6 +463,18 @@ footer{
     }
 }
 
+
+@media screen and (max-width:760px){
+    .card-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 30px;
+    }
+
+        
+}
+
 @media screen and (max-width:600px){
     nav .hori_ul{
         display: none;}
@@ -375,6 +483,9 @@ footer{
             display:none;
         }
 
-       
-    
+        .card-container{
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+        }      
 }
