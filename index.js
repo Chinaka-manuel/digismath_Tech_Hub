@@ -16,7 +16,6 @@
   }
   else {
     vatn.style.display = "block";
-    vatn.style.animation="animat1 1s ease-out 0s forward"
   }
 })
 };

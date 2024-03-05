@@ -45,6 +45,12 @@ nav>h3{
 }
 .menu_icon{
     font-size: 40px !important;
+    
+}
+
+.menu_icon:hover{
+    color:gray;
+    background-color: rgb(72, 57, 57);
 }
 
 #menu_icon1{
@@ -286,7 +292,7 @@ input[type=text]{
 
 /*  About sections styling */
 .About_sec{
-    min-height: 70dvh;
+    min-height: 100dvh;
     background-color: antiquewhite;
     position: relative;
     display: flex;
@@ -295,10 +301,59 @@ input[type=text]{
     flex-direction: column;
 
     }
+    /* about inner div styling */
+
+.About_box{
+    min-height: 50dvh;
+    border: none;
+    border-radius: 10px;
+    max-width: 60dvw;
+    min-height: auto;
+    text-align: center;
+    margin-top: 40px;
+    background: linear-gradient(to right, rgba(95, 97, 143,0.05),  rgba(95, 97, 143,0.3));
+    padding: 10px;
+    margin-bottom: 10px;
+
+    /* position: absolute;
+    bottom: 3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+
+    /* mission and Vission styling */
 
 .Mission{
     background-color: rgb(242, 148, 148);
     min-height: 100dvh;
+    min-height: 100dvh;
+    position: relative;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+
+    }
+
+.Mission_box{
+    min-height: 50dvh;
+    border: none;
+    border-radius: 10px;
+    max-width: 60dvw;
+    min-height: auto;
+    text-align: center;
+    margin-top: 40px;
+    background: linear-gradient(to right, rgba(246, 222, 7, 0.5),  rgba(95, 114, 185, 0.3));
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.Mission_box ul li{
+    list-style-type: none;
 }
 
 /*  Services sections styling */
@@ -329,6 +384,7 @@ input[type=text]{
     width: 100%; /* Adjust image width as needed */
     height: 200px; /* Adjust image height as needed */
     object-fit: cover; /* Scales image to fill the container */
+    border-radius: 10px;
   }
 
   /* Rotate the card on hover */
@@ -360,40 +416,18 @@ input[type=text]{
   .card button:hover {
     background-color: #0069d9;
   }
+
+
+
+  /* our team styling */
+
+  .Our_Team{
+    min-height: 100dvh;
+    background-color: beige;
+}
+
+
   
-
-/*.cards_container{
-    display: grid;
-    min-height: 80dvh;
-    max-width: 100dvw;
-    justify-content:space-evenly;
-    margin: auto;
-    gap: 5px;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto; 
-    margin-top: 40px;
-}
-
-.cards_container > div{
-    border: 1px solid black;
-    min-width: 30dvw;
-    min-height: 50dvh;
-    margin: 5px;
-    border-radius: 5px;
-    text-align: center;
-    display: grid;
-    
-}
-
-
-.cards_container .containItem-1, .containItem-2,.containItem-3,.containItem-3,.containItem-4,.containItem-5, div img{
-   max-width: 100%;
-
-}*/
-
-
-
-
 
 /* students testimony section */
 .students_testimonies{
@@ -402,12 +436,31 @@ input[type=text]{
     
 }
 
+/* gallery styling */
+
 .Gallery{
     min-height: 100dvh;
     background-color: beige;
 }
 
+.carols {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .carols img {
+    width: 100%; /* Adjust width as needed */
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+
+
+
+
 .topics{
+padding-top: 20px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -415,36 +468,31 @@ align-items: center;
 }
 
 
-.About_box{
-    min-height: 50dvh;
-    border: none;
-    border-radius: 10px;
-    max-width: 60dvw;
-    min-height: auto;
-    text-align: center;
-    margin-top: 40px;
-    background: linear-gradient(to right, rgba(95, 97, 143,0.05),  rgba(95, 97, 143,0.3));
-    padding: 10px;
-    margin-bottom: 10px;
-
-    /* position: absolute;
-    bottom: 3px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; */
-}
-
 .read_morebtn{
     margin: 10px;
     background-color: rgba( 87, 90, 183,0);
-    border:none;
+    min-height: 30px;
     cursor: pointer;
+    border: none;
+    background-color: #0069d9;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.read_morebtn:hover{
+    background-color: #114884;
 }
 
 .read_morebtn a{
     text-decoration: none;
+    color: whitesmoke;
+    padding: 3px;
+    
 }
+
+
+
 /* footer styling */
 
 footer{
