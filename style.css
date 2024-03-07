@@ -321,13 +321,20 @@ input[type=text]{
     align-items: center;
     flex-direction: column;
     justify-content: center; */
+
+}
+.About_sec div:nth-child(2) img{
+    min-width: 30dvw;
+    max-height: 50dvh;
+    border-radius: 10px;
+    margin-top: 50px;
 }
 
 
     /* mission and Vission styling */
 
 .Mission{
-    background-color: rgb(242, 148, 148);
+    background-color: rgb(16, 1, 1);
     min-height: 100dvh;
     min-height: 100dvh;
     position: relative;
@@ -346,10 +353,27 @@ input[type=text]{
     min-height: auto;
     text-align: center;
     margin-top: 40px;
-    background: linear-gradient(to right, rgba(246, 222, 7, 0.5),  rgba(95, 114, 185, 0.3));
+    /* background: linear-gradient(to right, rgba(246, 222, 7, 0.5),  rgba(95, 114, 185, 0.3)); */
+    color: white;
     padding: 10px;
     margin-bottom: 10px;
     
+}
+
+.Mission div:nth-child(2) img{
+    min-width: 30dvw;
+    max-height: 50dvh;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+.missionh3{
+    color: whitesmoke;
+}
+
+.black_back{
+    color: #fff;
 }
 
 .Mission_box ul li{
@@ -389,7 +413,7 @@ input[type=text]{
 
   /* Rotate the card on hover */
 .card:hover {
-    transform: translateY(20px); /* Rotate card 180 degrees on its Y-axis */
+    transform: translateY(20px); 
   }
   .card img:hover{
     opacity:0.7;
@@ -426,13 +450,70 @@ input[type=text]{
     background-color: beige;
 }
 
+.cards2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    min-width:80dvw;
+    min-height:100dvh;
+    gap: 10px;
+    margin: 10px;
+    justify-items: center;
+    align-content: center;
+   
+    
+}
+.cards_cont{
+    min-height:100px;
+    min-width: 80%;
+    padding: 10px;
+    
+}
+.cards_cont button a {
+    text-decoration: none;
+    padding: 5px;
+
+   
+}
+.cards_cont div{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards_cont div button{
+    max-height: 40px;
+}
+
+.cards_cont p a{
+    text-decoration: none;
+}
+
+.cards_cont p{
+    margin: 0;
+    padding: px;
+}
+
+.cards_cont h5{
+    color: rgb(86, 85, 85);
+}
+
+.cards_cont p a img{
+    object-fit:cover;
+    max-width:30%;
+    max-height: 50px;
+    float:left;
+    margin:7px;
+    border-radius: 50px;
+    margin: 5px;
+    padding: 0;
+}
 
   
 
 /* students testimony section */
 .students_testimonies{
     min-height: 100dvh;
-    background-color: rgb(52, 126, 205);
+    background-color:rgb(52, 126, 205);
     
 }
 
@@ -509,6 +590,8 @@ footer{
     .landing_pg nav #menu_icon1,#menu_icon span{
         display: none;
     }
+
+    
 }
 
 
@@ -518,6 +601,11 @@ footer{
         grid-template-columns: auto auto;
         justify-content: center;
         gap: 30px;
+    }
+
+    .cards2{
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
         
@@ -535,5 +623,10 @@ footer{
             display: grid;
             grid-template-columns: auto;
             justify-content: center;
-        }      
+        }
+        
+        .cards2{
+            display: grid;
+            grid-template-columns: auto;
+        }
 }
