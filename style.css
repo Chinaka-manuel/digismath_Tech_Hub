@@ -323,9 +323,9 @@ input[type=text]{
     justify-content: center; */
 
 }
-.About_sec div:nth-child(2) img{
-    min-width: 30dvw;
-    max-height: 50dvh;
+.About_sec .topics img{
+    max-width: 50dvw;
+    max-height: 40dvh;
     border-radius: 10px;
     margin-top: 50px;
 }
@@ -360,8 +360,8 @@ input[type=text]{
     
 }
 
-.Mission div:nth-child(2) img{
-    min-width: 30dvw;
+.Mission .topics img{
+    max-width: 40dvw;
     max-height: 50dvh;
     border-radius: 10px;
     margin-top: 50px;
