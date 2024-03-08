@@ -26,14 +26,14 @@ html,body{
 }
 @keyframes fade {
     0% { background-image:linear-gradient(rgba(0,8,51,0.8), rgba(0,8,51,0)), url("./Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg"); } /* Start with image1 */
-    50% { background-image:linear-gradient(rgba(0,8,51,0.5), rgba(0,8,51,0.1)), url("./Images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg"); } /* Transition to image2 at 50% */
+    50% { background-image:linear-gradient(rgba(0,8,51,0.5), rgba(0,8,51,0.1)), url("./Images/bootcamp_image.jpg"); } /* Transition to image2 at 50% */
     100% { background-image:linear-gradient(rgba(0,8,51,0), rgba(0,8,51,0.8)), url("./Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg"); } /* Back to image1 at 100% */
 
   }
 
 .landing_pg{
     min-height: 100dvh;
-    background-image:linear-gradient(rgba(0,8,51,0.5), rgba(0,8,51,0.8)), url(./Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg),linear-gradient(rgba(0,8,51,0.5)), url(./Images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+    /* background-image:linear-gradient(rgba(0,8,51,0.5), rgba(0,8,51,0.8)), url(./Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg),linear-gradient(rgba(0,8,51,0.5)), url(./Images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:local;
